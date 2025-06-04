@@ -29,6 +29,15 @@
 - The results highlight that while the RNN-based approach can capture some temporal patterns, further improvements are needed, especially for stocks with more complex or volatile price behavior
 
 
+## Recommendations
+- Decrease dropout to 0.2 or try weight regularization instead. 
+- Use MinMaxScaler instead of StandardScaler for better inverse transform results. 
+- Consider multi-output loss weighting—some stocks (like IBM) may need more emphasis. 
+- Use residual features: returns, volatility, or sector indices. 
+- Increase sequence length (window_size) to capture longer-term trends. 
+- Try attention-based LSTM/GRU or Transformer-based models for better performance.
+
+
 ## Technologies Used
 - numpy: 2.1.3
 - pandas: 2.2.3
